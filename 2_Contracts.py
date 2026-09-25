@@ -11,7 +11,7 @@ import streamlit as st
 # In[2]:
 
 
-paf2 = pd.read_csv(r'C:\Users\212554084\Box\Python_data\paf_contract.csv')
+paf2 = pd.read_csv('https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_contract.csv')
 
 
 # In[ ]:
