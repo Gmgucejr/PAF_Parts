@@ -41,7 +41,6 @@ warnings.filterwarnings("ignore")
 
 # In[3]:
 
-
 paf = pd.read_csv('https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_del.csv')
 
 from datetime import datetime, timedelta, date
