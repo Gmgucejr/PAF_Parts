@@ -42,7 +42,7 @@ warnings.filterwarnings("ignore")
 # In[3]:
 
 
-paf = pd.read_csv(r'C:\Users\212554084\Box\Python_data\PAF_del.csv')
+paf = pd.read_csv(https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_del.csv)
 
 from datetime import datetime, timedelta, date
 paf['Delivered_Date'] = pd.to_datetime(paf['Delivered_Date'],format='mixed')
@@ -64,8 +64,8 @@ paf.info()
 # In[4]:
 
 
-paf2 = pd.read_csv(r'C:\Users\212554084\Box\Python_data\paf_contract.csv')
-paf3 = pd.read_csv(r'C:\Users\212554084\Box\Python_data\paf_prop.csv')
+paf2 = pd.read_csv(https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_contract.csv)
+paf3 = pd.read_csv(https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_prop.csv)
 
 paf3['Unit Price'] = pd.to_numeric(paf3['Unit Price'].str.replace(r'[^\d.]', '', regex=True), errors='coerce')
 
