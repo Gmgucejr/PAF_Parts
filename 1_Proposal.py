@@ -11,7 +11,7 @@ import streamlit as st
 # In[2]:
 
 
-paf3 = pd.read_csv('https://github.com/Gmgucejr/PAF_Parts/blob/main/paf_prop.csv')
+paf3 = pd.read_csv('https://raw.githubusercontent.com/Gmgucejr/PAF_Parts/refs/heads/main/paf_prop.csv')
 
 
 # In[3]:
