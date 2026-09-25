@@ -354,7 +354,7 @@ st.stop()
 # In[33]:
 
 
-get_ipython().system('jupyter nbconvert --to script --output-dir="C:\\Users\\212554084\\Downloads" beta_st6.ipynb')
+#get_ipython().system('jupyter nbconvert --to script --output-dir="C:\\Users\\212554084\\Downloads" beta_st6.ipynb')
 
 
 # In[ ]:
