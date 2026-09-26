@@ -488,8 +488,23 @@ st.session_state.df["Arrival_Date"] = pd.to_datetime(st.session_state.df["Arriva
 st.subheader("Current Data")
 st.dataframe(st.session_state.df)
 
-st.session_state.df.to_csv('https://raw.githubusercontent.com/Gmgucejr/PAF_Parts/refs/heads/main/paf_latest.csv')
+#st.session_state.df.to_csv('https://raw.githubusercontent.com/Gmgucejr/PAF_Parts/refs/heads/main/paf_latest.csv')
 
+@st.cache_data
+def convert_df(dataframe):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return dataframe.to_csv(index=False).encode('utf-8')
+
+# 4. Convert the dataframe
+csv_data = convert_df(st.session_state.df)
+
+# 5. Create the download button
+st.download_button(
+    label="Download data as CSV",
+    data=csv_data,
+    file_name="my_dataframe.csv",
+    mime="text/csv",
+)
 
 # In[ ]:
 
