@@ -389,7 +389,7 @@ ax.set_ylabel('Quantity',fontsize=18)
 
 
 ax.legend(title="Part Quantity", fontsize=18)
-ax.set_xticklabels(labels=paf9_sorted.Part_Due_Date,rotation=45, ha='right', fontsize=18)
+ax.set_xticklabels(labels=edited_df.Part_Due_Date,rotation=45, ha='right', fontsize=18)
 ax.tick_params(axis='y', labelsize=18)
 
 
