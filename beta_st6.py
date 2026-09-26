@@ -224,7 +224,7 @@ plt.show()
 # In[ ]:
 
 
-paf20 = pd.read_csv('https://raw.githubusercontent.com/Gmgucejr/PAF_Parts/refs/heads/main/paf_contract.csv)
+paf20 = pd.read_csv('https://raw.githubusercontent.com/Gmgucejr/PAF_Parts/refs/heads/main/paf_contract.csv')
 paf5 = paf20.groupby(['Part Number', 'Nomenclature', 'LT', 'Due date']).Qty.sum()
 paf6 = paf5.to_frame()
 paf6 = paf6.reset_index(level=['Part Number', 'Nomenclature','Due date', 'LT'])
